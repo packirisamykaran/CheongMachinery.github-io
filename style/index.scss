@@ -35,6 +35,7 @@ $max-width-3: 1000px;
 
 
 .cheong-machinery{
+    width: 100%;
 
     // Header
     .header{
@@ -56,13 +57,14 @@ $max-width-3: 1000px;
             
             background-color: $darkerred;
             width: 100%;
-            padding: $pad1;
 
             .container{
                 display: flex;
                 justify-content: space-around;
                 max-width: $max-width-1;
                 margin-inline: auto;
+                width: 100%;
+                padding: $pad1 0;
 
                 a{
                     color: $white;
@@ -87,6 +89,7 @@ $max-width-3: 1000px;
         background-size: cover;
         background-position: center;
         padding: $pad4 0;
+        width: 100%;
 
         
 

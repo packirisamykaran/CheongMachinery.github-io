@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.cheong-machinery {
+  width: 100%;
+}
+
 .cheong-machinery .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +32,6 @@
 .cheong-machinery .header .navbar {
   background-color: #D61900;
   width: 100%;
-  padding: 0.5rem;
 }
 
 .cheong-machinery .header .navbar .container {
@@ -39,6 +42,8 @@
       justify-content: space-around;
   max-width: 600px;
   margin-inline: auto;
+  width: 100%;
+  padding: 0.5rem 0;
 }
 
 .cheong-machinery .header .navbar .container a {
@@ -57,6 +62,7 @@
   background-size: cover;
   background-position: center;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .cheong-machinery .sec-1 .container {
