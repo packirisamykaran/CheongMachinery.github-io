@@ -56,7 +56,7 @@
   font-weight: 500;
 }
 
-.cheong-machinery .sec-1 {
+.cheong-machinery .hero {
   background-image: url("https://media.istockphoto.com/photos/construction-site-background-picture-id1337111964?b=1&k=20&m=1337111964&s=170667a&w=0&h=n7KjvjgUbC1wYHq_45N4LVLoO1I_4ftDvhvoCKF2fjg=");
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-.cheong-machinery .sec-1 .container {
+.cheong-machinery .hero .container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 20px;
@@ -85,13 +85,174 @@
   row-gap: 0.5rem;
 }
 
-.cheong-machinery .sec-1 .container .logo {
+.cheong-machinery .hero .container .logo {
   width: 100%;
   max-width: 400px;
 }
 
-.cheong-machinery .sec-1 .container p {
+.cheong-machinery .hero .container p {
   text-align: center;
   font-weight: 500;
+}
+
+.cheong-machinery .services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  row-gap: 1rem;
+}
+
+.cheong-machinery .services .container h2 {
+  text-align: center;
+}
+
+.cheong-machinery .services .container .service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+.cheong-machinery .services .container .service-list .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 0.5rem;
+  padding: 0.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.cheong-machinery .services .container .service-list .list-item img {
+  width: 30px;
+}
+
+.cheong-machinery .services .container .service-list .list-item p {
+  text-align: center;
+}
+
+.cheong-machinery .about-us {
+  background-image: url("https://images.pexels.com/photos/4170184/pexels-photo-4170184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.cheong-machinery .about-us .container {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.5rem;
+  padding: 1rem;
+}
+
+.cheong-machinery .about-us .container h2 {
+  margin-left: 20%;
+}
+
+.cheong-machinery .about-us .container .section {
+  border: white solid 4px;
+  margin-inline: auto;
+  max-width: 600px;
+}
+
+.cheong-machinery .about-us .container .section h3 {
+  background-color: #EB1D23;
+  padding: 1rem;
+}
+
+.cheong-machinery .about-us .container .section p {
+  padding: 1rem;
+}
+
+.cheong-machinery .about-us .container .section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  row-gap: 1rem;
+}
+
+.cheong-machinery .about-us .container .section li {
+  list-style-type: none;
+}
+
+.cheong-machinery .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+  border: #D61900 2px solid;
+  padding: 0.5rem;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.cheong-machinery .contact-info .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 0 5%;
+}
+
+.cheong-machinery .contact-info .section .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.cheong-machinery .contact-info .section .info {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.cheong-machinery .contact-info .map {
+  width: 100%;
+}
+
+.cheong-machinery .contact-info .map .map-frame {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */
