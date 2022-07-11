@@ -107,6 +107,7 @@ $max-width-3: 1000px;
             flex-direction: column;
             align-items: center;
             row-gap: $pad1;
+            margin-top: 10%;
 
             .logo{
                 width: 100%;
@@ -246,7 +247,8 @@ $max-width-3: 1000px;
         width: 90%;
         margin: $pad2 auto;
         // border: #D61900 2px solid;
-        padding: $pad1;
+        padding: $pad2;
+        font-weight: 500;
         max-width: $max-width-2;
         border-radius: 20px;
         // background-color: rg;
@@ -254,7 +256,7 @@ $max-width-3: 1000px;
         .section{
 
             display: flex;
-            column-gap: 0.2rem;
+            column-gap: 1rem;
             align-items: center;
             align-self: start;
             padding: 0 5%;
@@ -291,6 +293,10 @@ $max-width-3: 1000px;
 
 
 
+    // contact-us
+    .contact-us{
+        
+    }
 
 
 
