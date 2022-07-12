@@ -295,7 +295,53 @@ $max-width-3: 1000px;
 
     // contact-us
     .contact-us{
+
+        background-color: $red;
+        width: 80%;
+        margin: $pad2 auto;
+        border-radius: 10px;
+        padding: $pad2;
+        max-width: 700px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: $pad2;
         
+
+        h3{
+            align-self: center;
+        }
+
+        input, textarea{
+            align-self: flex-start;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            margin-left: 5%;
+            width: 60%;
+        }
+        
+        #contact-us-message{
+            height: 100px;
+            width: 80%;
+            overflow-wrap: break-word;
+
+        }
+
+        button{
+            width: min-content;
+            align-self: center;
+            padding: 0.2rem $pad2;
+            font-weight: 500;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+
+    // contact-us
     }
 
 

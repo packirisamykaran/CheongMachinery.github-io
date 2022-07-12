@@ -261,4 +261,60 @@
 .cheong-machinery .contact-info .map .map-frame {
   width: 100%;
 }
+
+.cheong-machinery .contact-us {
+  background-color: #EB1D23;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 700px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+.cheong-machinery .contact-us h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cheong-machinery .contact-us input, .cheong-machinery .contact-us textarea {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 5%;
+  width: 60%;
+}
+
+.cheong-machinery .contact-us #contact-us-message {
+  height: 100px;
+  width: 80%;
+  overflow-wrap: break-word;
+}
+
+.cheong-machinery .contact-us button {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */
