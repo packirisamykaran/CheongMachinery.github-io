@@ -48,7 +48,7 @@ $max-width-3: 1000px;
 
         // Logo
         .logo{
-            width: 120px;
+            width: 150px;
 
         }
 
@@ -85,10 +85,11 @@ $max-width-3: 1000px;
 
 
     .hero{
-        background-image: url("https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        // background-image: url("https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-image: url("https://img.freepik.com/premium-photo/construction-worker-truss-installation_33835-781.jpg?w=1060");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         padding: $pad4 0;
         width: 100%;
         height: 70vh;
@@ -97,7 +98,7 @@ $max-width-3: 1000px;
 
         .container{
             $sec1-c-dim: 350px;
-            background-color: rgba($color: white, $alpha: 0.8);
+            // background-color: rgba($color: rgb(156, 126, 126), $alpha: 0.8);
             padding: $pad2;
             border-radius: 20px;
             width: 80%;
@@ -128,7 +129,8 @@ $max-width-3: 1000px;
 
 
     .services{
-        // background-color: rgba(rgb(98, 98, 255), 0.7);
+        // background-color: rgba(rgb(251, 174, 150), 0.7);
+        background-image: url("https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?t=st=1658217456~exp=1658218056~hmac=f9d0b689e24d17a5639fb61fc6dadaaf8126342f29daaca6e22d1e7525ffc140&w=1060");
         padding: 2rem;
         .container{
 
@@ -208,7 +210,7 @@ $max-width-3: 1000px;
 
 
                 h3{
-                    background-color: $red;
+                    background-color: rgba($red, 0.5);
                     padding: $pad2;
                 }
 
