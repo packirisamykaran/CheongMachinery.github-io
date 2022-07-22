@@ -196,9 +196,22 @@
   overflow: scroll;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+
+.cheong-machinery .products .product-list .product-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cheong-machinery .products .product-list .product-list {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .cheong-machinery .products .product-list .item {

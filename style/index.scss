@@ -219,8 +219,19 @@ $max-width-3: 1000px;
             display: flex;
             overflow: scroll;
             column-gap: 1rem;
-            justify-content: center;
+            justify-content: flex-start;
+
             
+            /* Hide scrollbar for Chrome, Safari and Opera */
+        .product-list::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .product-list {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
 
 
             .item{
