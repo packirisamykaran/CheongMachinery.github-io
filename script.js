@@ -70,6 +70,8 @@ const displayProducts = ()=>{
 
         productsElement.appendChild(machineDisplay);
     }
+
+    
 }
 
 displayProducts();
@@ -78,6 +80,9 @@ displayProducts();
 productSelectDocument.onchange = ()=>{
     displayProducts()
 }
+
+
+// Display Product category
 
 
 // Product option

@@ -193,25 +193,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  /* Hide scrollbar for IE, Edge and Firefox */
-}
-
-.cheong-machinery .products .product-list .product-list::-webkit-scrollbar {
-  display: none;
-}
-
-.cheong-machinery .products .product-list .product-list {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  overflow-x: auto;
+  width: 100%;
 }
 
 .cheong-machinery .products .product-list .item {
@@ -219,18 +202,18 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem;
+  padding: 1rem;
   color: white;
 }
 
 .cheong-machinery .products .product-list .item .name {
   font-weight: 500;
   color: black;
+  text-align: center;
 }
 
 .cheong-machinery .products .product-list .item img {
   height: 200px;
-  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -324,13 +307,13 @@
 }
 
 .cheong-machinery .contact-info .section .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .cheong-machinery .contact-info .section .info {
   max-width: 100%;
-  word-break: break-all;
+  font-size: 0.9rem;
 }
 
 .cheong-machinery .contact-info .map {
