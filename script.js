@@ -97,6 +97,11 @@ const displayDetailElement = document.getElementById("displayItemDetails")
 displayDetailElement.style.visibility = "hidden"
 
 const displayItemDetails = (item, currentCat)=>{
+
+    while(displayDetailElement.firstChild){
+        displayDetailElement.removeChild(displayDetailElement.firstChild);
+    }
+
     let curCategory = products[currentCat];
     let equipment = curCategory[item];
     
