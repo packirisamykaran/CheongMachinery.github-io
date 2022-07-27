@@ -177,6 +177,9 @@
           align-items: center;
   row-gap: 0.5rem;
   padding: 0.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
 }
 
 .cheong-machinery .displayItemDetails #close-item-detail {
@@ -206,10 +209,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid black;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
 
 .cheong-machinery .displayItemDetails .info-row > * {
@@ -375,7 +378,7 @@
 
 .cheong-machinery .contact-info .section .info {
   max-width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .cheong-machinery .contact-info .map {

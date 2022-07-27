@@ -202,7 +202,8 @@ $max-width-3: 1000px;
         align-items: center;
         row-gap: 0.5rem;
         padding: 0.5rem;
-        
+        border-radius: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;        
 
 
 
@@ -228,8 +229,9 @@ $max-width-3: 1000px;
 
         .info-row{
             display: flex;
-            border: 2px solid black;
+            // border: 2px solid black;
             justify-content: space-between;
+            padding: 0;
             
         }
 
@@ -395,7 +397,7 @@ $max-width-3: 1000px;
             
             .info{
                 max-width: 100%;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 // word-break: break-all;
                 
             }
