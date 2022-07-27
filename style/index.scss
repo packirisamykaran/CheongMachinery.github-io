@@ -185,7 +185,54 @@ $max-width-3: 1000px;
     }
 
 
+    
+
+
     // Products
+
+    .displayItemDetails{
+        position: fixed;
+        width: 90%;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+
+
+        #close-item-detail{
+            cursor: pointer;
+            font-weight: 600;
+            color: #D61900;
+            text-align: end;
+            padding: 0.5rem 0.7rem;
+        }
+
+        .info-container{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .info-row{
+            display: flex;
+            column-gap: 0.2rem;
+            border: 2px solid black;
+            justify-content: space-between;
+        }
+
+        .info-row>*{
+            width: 100%;
+            border: 2px solid black;
+            font-size: 0.9rem;
+
+        }
+
+
+    }
+
+
 
     .products{
         display: flex;
@@ -193,9 +240,6 @@ $max-width-3: 1000px;
         align-items: center;
         padding: 2rem 0;
         row-gap: 2rem;
-                
-        
-
 
         select{
             border: 3px solid black;
@@ -219,7 +263,6 @@ $max-width-3: 1000px;
             display: flex;
             overflow-x: auto; 
             width: 100%;
-
             
   
 
@@ -420,4 +463,12 @@ $max-width-3: 1000px;
 
 
 // Cheong Machinery
+}
+
+
+@media only screen and (min-width: 700px)  {
+    .product-list{
+        display: flex;
+        justify-content: center;
+    }
 }

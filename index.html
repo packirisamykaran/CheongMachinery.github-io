@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="cheong-machinery">
+        
         <div class="header">
             <img src="./assets/cmelg.png" alt="logo" class="logo">
             <div class="navbar">
@@ -57,7 +58,12 @@
             </div>
         </div>
 
+        <div class="displayItemDetails" id="displayItemDetails">
+            <div id="close-item-detail">X</div>
+        </div>
+
         <div class="products"  id="products">
+            
             <select name="product-category" id="product-category">
             </select>
             <div class="product-list" id="product-list">
@@ -122,10 +128,10 @@
         <form  class="gform" data-email="packirisamykaran1@gmail.com" method="post" action="https://script.google.com/macros/s/AKfycbwMCZno2rXUCI9pYa1JsBgjRYrvAlc3tvByvB7PBWWy_GNiPA2gaytXoPJOER1tk2_4Bw/exec">
             <div class="contact-us" id="contact-us">
                 <h3>Send us your enquiry</h3>
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea id="contact-us-message" name="message" placeholder="Message"></textarea>
+                <input required type="text" name="name" placeholder="Name">
+                <input required type="text" name="email" placeholder="Email">
+                <input required type="text" name="subject" placeholder="Subject">
+                <textarea required id="contact-us-message" name="message" placeholder="Message"></textarea>
                 <input type="text" id="validation" name="validation" placeholder="Which is bigger, 1 or 8?">
                 <button id="submit-btn" type="submit" >Submit</button>
             </div>

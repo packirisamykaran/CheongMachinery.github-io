@@ -15,6 +15,8 @@ const productDetails = {
         }
     },
 
+    
+
     "rebar bender":{
         "TKSB-25":{
             "Maximum Bending Diameter":"25mm",
