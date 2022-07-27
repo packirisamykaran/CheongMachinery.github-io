@@ -98,16 +98,23 @@ displayDetailElement.style.visibility = "hidden"
 
 const displayItemDetails = (item, currentCat)=>{
 
-    while(displayDetailElement.firstChild){
-        displayDetailElement.removeChild(displayDetailElement.firstChild);
+    let divElement = document.getElementById("info-container");
+
+    while(divElement.firstChild){
+        divElement.removeChild(divElement.firstChild);
     }
+
+
+    let displayImgElement = document.getElementById("display-img");
+    displayImgElement.src = "./products/"+currentCat+"/"+item+".png"
 
     let curCategory = products[currentCat];
     let equipment = curCategory[item];
+
+
     
 
-    let divElement = document.createElement("div")
-        divElement.className = "info-container";
+    
 
     for(const detail in equipment){
         let itemElement = document.createElement("div");

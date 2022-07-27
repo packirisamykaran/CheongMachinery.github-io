@@ -165,14 +165,31 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .cheong-machinery .displayItemDetails #close-item-detail {
   cursor: pointer;
   font-weight: 600;
   color: #D61900;
-  text-align: end;
-  padding: 0.5rem 0.7rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 0.7rem;
+}
+
+.cheong-machinery .displayItemDetails #display-img {
+  height: 200px;
 }
 
 .cheong-machinery .displayItemDetails .info-container {
@@ -189,8 +206,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 0.2rem;
-          column-gap: 0.2rem;
   border: 2px solid black;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -201,6 +216,7 @@
   width: 100%;
   border: 2px solid black;
   font-size: 0.9rem;
+  padding: 0.2rem;
 }
 
 .cheong-machinery .products {
