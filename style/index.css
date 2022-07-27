@@ -180,6 +180,7 @@
   border-radius: 5px;
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
+  border: 2px solid black;
 }
 
 .cheong-machinery .displayItemDetails #close-item-detail {
