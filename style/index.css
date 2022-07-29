@@ -54,6 +54,7 @@
   border-bottom: 2px solid white;
   border-radius: 1px;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .cheong-machinery .hero {
@@ -451,7 +452,10 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .product-list {
+  .cheong-machinery .header .container a {
+    font-size: 1.2rem;
+  }
+  .cheong-machinery .product-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

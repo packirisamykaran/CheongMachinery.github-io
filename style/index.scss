@@ -75,6 +75,7 @@ $max-width-3: 1000px;
                     border-bottom: 2px solid $white;
                     border-radius: 1px;
                     font-weight: $fw5;
+                    font-size: 0.8rem;
                 }
 
             }
@@ -493,8 +494,23 @@ $max-width-3: 1000px;
 
 
 @media only screen and (min-width: 700px)  {
-    .product-list{
-        display: flex;
-        justify-content: center;
+
+    .cheong-machinery{
+
+        .header{
+            .container{
+
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .product-list{
+            display: flex;
+            justify-content: center;
+        }
+
     }
+    
 }
