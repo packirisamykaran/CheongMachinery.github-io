@@ -141,6 +141,7 @@ const displayItemDetails = (item, currentCat)=>{
     displayDetailElement.appendChild(divElement);
 
     displayDetailElement.style.visibility = "visible"
+    displayDetailElement.style.zIndex = "1"
 
     
 }
@@ -153,6 +154,8 @@ const itemDiplayCloseBtn  = document.getElementById("close-item-detail");
 itemDiplayCloseBtn.onclick = ()=>{
     let itemDetailDisplay = document.getElementById("displayItemDetails");
     itemDetailDisplay.style.visibility = "hidden"
+    itemDetailDisplay.style.zIndex = "-1"
+    
 }
 
 // close item detail

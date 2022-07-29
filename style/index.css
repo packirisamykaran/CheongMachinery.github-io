@@ -32,6 +32,9 @@
 .cheong-machinery .header .navbar {
   background-color: #D61900;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .cheong-machinery .header .navbar .container {
@@ -58,11 +61,11 @@
 }
 
 .cheong-machinery .hero {
-  background-image: url("https://img.freepik.com/premium-photo/construction-worker-truss-installation_33835-781.jpg?w=1060");
+  background-image: url("https://img.freepik.com/free-photo/excavator-action_1112-1598.jpg?w=996&t=st=1659082029~exp=1659082629~hmac=7d58f95fcca9d7141eea07cd2168e877f0bfd5aa2de12445678ab10af395f7d7");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  padding: 2rem 0;
+  background-position: bottom;
+  padding: 1rem 0;
   width: 100%;
   height: 70vh;
 }
@@ -84,7 +87,7 @@
       -ms-flex-align: center;
           align-items: center;
   row-gap: 0.5rem;
-  margin-top: 10%;
+  max-width: 400px;
 }
 
 .cheong-machinery .hero .container .logo {
@@ -183,6 +186,7 @@
           box-shadow: #26394d 0px 20px 30px -10px;
   border: 2px solid black;
   max-width: 500px;
+  z-index: -1;
 }
 
 .cheong-machinery .displayItemDetails #close-item-detail {
@@ -240,8 +244,6 @@
           align-items: center;
   padding: 2rem 0;
   row-gap: 2rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(214, 25, 0, 0.2)), to(white));
-  background-image: linear-gradient(to right, rgba(214, 25, 0, 0.2), white);
 }
 
 .cheong-machinery .products select {
@@ -462,6 +464,18 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .services .container .service-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=index.css.map */
