@@ -181,15 +181,18 @@
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
   border: 2px solid black;
+  max-width: 500px;
 }
 
 .cheong-machinery .displayItemDetails #close-item-detail {
   cursor: pointer;
   font-weight: 600;
-  color: #D61900;
+  background-color: #D61900;
+  color: white;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0 0.7rem;
+  border-radius: 7px;
 }
 
 .cheong-machinery .displayItemDetails #display-img {
@@ -236,6 +239,8 @@
           align-items: center;
   padding: 2rem 0;
   row-gap: 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(214, 25, 0, 0.2)), to(white));
+  background-image: linear-gradient(to right, rgba(214, 25, 0, 0.2), white);
 }
 
 .cheong-machinery .products select {
@@ -269,7 +274,6 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem;
-  color: white;
 }
 
 .cheong-machinery .products .product-list .item .name {

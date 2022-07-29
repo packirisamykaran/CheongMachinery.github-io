@@ -205,15 +205,19 @@ $max-width-3: 1000px;
         border-radius: 5px;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;       
         border: 2px solid black; 
+        max-width: 500px;
+        
 
 
 
         #close-item-detail{
             cursor: pointer;
             font-weight: 600;
-            color: #D61900;
+            background-color: #D61900;
+            color: white;
             align-self: flex-end;
             padding: 0 0.7rem;
+            border-radius: 7px;
         }
 
         #display-img{
@@ -242,6 +246,7 @@ $max-width-3: 1000px;
             font-size: 0.9rem;
 
             padding: 0.2rem;
+            
 
         }
 
@@ -256,6 +261,11 @@ $max-width-3: 1000px;
         align-items: center;
         padding: 2rem 0;
         row-gap: 2rem;
+        background-image:
+        linear-gradient(
+          to right, 
+          rgba($darkerred, 0.2), white
+        );
 
         select{
             border: 3px solid black;
@@ -289,7 +299,7 @@ $max-width-3: 1000px;
                 width: fit-content;
                 padding: 1rem;
                 // background-color: $darkerred;
-                color: white;
+                
 
 
                 .name{
