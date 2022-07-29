@@ -452,7 +452,7 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .cheong-machinery .header .container a {
+  .cheong-machinery .header .navbar .container a {
     font-size: 1.2rem;
   }
   .cheong-machinery .product-list {
