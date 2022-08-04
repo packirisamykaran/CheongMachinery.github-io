@@ -95,7 +95,7 @@ $max-width-3: 1000px;
         // background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0)), url("https://images.unsplash.com/photo-1611906622516-be9a76360430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
         // background-image: url("../assets/cheong-banner.jpg");
        
-        background-image: url("https://img.freepik.com/free-photo/excavator-action_1112-1598.jpg?w=996&t=st=1659082029~exp=1659082629~hmac=7d58f95fcca9d7141eea07cd2168e877f0bfd5aa2de12445678ab10af395f7d7");
+        background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -215,7 +215,6 @@ $max-width-3: 1000px;
         padding: 0.5rem;
         border-radius: 5px;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;       
-        border: 2px solid black; 
         max-width: 500px;
         z-index: -1;
         
@@ -241,6 +240,7 @@ $max-width-3: 1000px;
         .info-container{
             display: flex;
             flex-direction: column;
+            row-gap: 0.2rem;
 
         }
 
@@ -249,15 +249,18 @@ $max-width-3: 1000px;
             // border: 2px solid black;
             justify-content: space-between;
             padding: 0;
+            column-gap: 0.2rem;
             
         }
 
         .info-row>*{
             width: 100%;
-            border: 2px solid black;
+            border: 2px solid rgb(143, 61, 61);
             font-size: 0.9rem;
-
+            border-radius: 5px;
             padding: 0.2rem;
+            border-style: inset;
+            
             
 
         }
@@ -530,13 +533,22 @@ $max-width-3: 1000px;
 
 @media only screen and (min-width: 1000px) {
 
-    .services{
-        .container{
-            .service-list{
-                display: flex;
-                flex-direction: row;
+   .cheong-machinery{
+        .services{
+            .container{
+                .service-list{
+                    display: flex;
+                    flex-direction: row;
+                }
             }
         }
-    }
+
+
+        .products{
+            .product-list{
+                column-gap: 3rem;
+            }
+        }
+   }
 
 }

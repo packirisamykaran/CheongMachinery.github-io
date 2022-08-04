@@ -61,7 +61,7 @@
 }
 
 .cheong-machinery .hero {
-  background-image: url("https://img.freepik.com/free-photo/excavator-action_1112-1598.jpg?w=996&t=st=1659082029~exp=1659082629~hmac=7d58f95fcca9d7141eea07cd2168e877f0bfd5aa2de12445678ab10af395f7d7");
+  background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -184,7 +184,6 @@
   border-radius: 5px;
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
-  border: 2px solid black;
   max-width: 500px;
   z-index: -1;
 }
@@ -212,6 +211,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  row-gap: 0.2rem;
 }
 
 .cheong-machinery .displayItemDetails .info-row {
@@ -222,13 +222,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
 }
 
 .cheong-machinery .displayItemDetails .info-row > * {
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid #8f3d3d;
   font-size: 0.9rem;
+  border-radius: 5px;
   padding: 0.2rem;
+  border-style: inset;
 }
 
 .cheong-machinery .products {
@@ -468,7 +472,7 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .services .container .service-list {
+  .cheong-machinery .services .container .service-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,6 +480,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .cheong-machinery .products .product-list {
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
