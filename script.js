@@ -30,7 +30,10 @@ validationElement.onkeyup = function(){
 // Product option
 
 let productSelectDocument = document.getElementById("product-category");
-
+let option = document.createElement("option");
+option.value = "All";
+option.text = "All";
+productSelectDocument.add(option);
 for(const category in products){
 
     let option = document.createElement("option");
@@ -44,6 +47,7 @@ for(const category in products){
 // Display Product category
 
 const displayProducts = ()=>{
+    
     let productsElement = document.getElementById("product-list");
 
     while(productsElement.firstChild){
@@ -51,6 +55,25 @@ const displayProducts = ()=>{
     }
 
     let currentCat =  productSelectDocument.value;
+
+    if(currentCat==="All"){
+        for(const category in products){
+            addProducts(category)
+        }
+    }
+    else{
+        addProducts(currentCat);
+    }
+
+    
+
+    
+}
+
+
+const addProducts =(currentCat)=>{
+
+    let productsElement = document.getElementById("product-list");
 
     for(const item in products[currentCat]){
         
@@ -73,9 +96,9 @@ const displayProducts = ()=>{
 
         productsElement.appendChild(machineDisplay);
     }
-
-    
 }
+
+
 
 displayProducts();
 
