@@ -37,71 +37,59 @@ $max-width-3: 1000px;
 .cheong-machinery{
     width: 100%;
 
-    // Header
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: $pad2; 
-        row-gap: $pad1;
-        
-
-        // Logo
-        .logo{
-            width: 150px;
-
-        }
-
-
-        // Navbar
-        .navbar{
-            
-            background-color: $darkerred;
-            width: 100%;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            
-
-            .container{
-                display: flex;
-                justify-content: space-around;
-                max-width: $max-width-1;
-                margin-inline: auto;
-                width: 100%;
-                padding: $pad1 0;
-
-                a{
-                    color: $white;
-                    text-decoration: none;
-                    text-transform: capitalize;
-                    padding: 0.2rem;
-                    border-bottom: 2px solid $white;
-                    border-radius: 1px;
-                    font-weight: $fw5;
-                    font-size: 0.8rem;
-                }
-
-            }
-        }
-    
-    // Header
+    .header-logo{
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        padding:1rem
     }
 
 
-    .hero{
-        // background-image: url("https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        // background-image: url("https://img.freepik.com/premium-photo/construction-worker-truss-installation_33835-781.jpg?w=1060");
-        // background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0)), url("https://images.unsplash.com/photo-1611906622516-be9a76360430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-        // background-image: url("../assets/cheong-banner.jpg");
-       
-        background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        padding:1rem 0;
+     // Navbar
+     .navbar{
+            
+        background-color: $darkerred;
         width: 100%;
-        height: 70vh;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        
+        
+
+        .container{
+            display: flex;
+            justify-content: space-around;
+            max-width: $max-width-1;
+            margin-inline: auto;
+            width: 100%;
+            padding: $pad1 0;
+
+            a{
+                color: $white;
+                text-decoration: none;
+                text-transform: capitalize;
+                padding: 0.2rem;
+                border-bottom: 2px solid $white;
+                border-radius: 1px;
+                font-weight: $fw5;
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+
+    .hero{
+        background-image: url("https://images.unsplash.com/photo-1623475030673-a4f228266a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        padding:6rem 0;
+        background-size: cover;
+        background-position:  center;
+    //     width: 100%;
+    //     height: 100%;
+    //    width: 100vw;
+       
         
 
         
@@ -109,7 +97,7 @@ $max-width-3: 1000px;
         .container{
             $sec1-c-dim: 350px;
             // background-color: rgba($color: rgb(182, 175, 175), $alpha: 0.4);
-            padding: $pad2;
+            // padding: $pad2;
             border-radius: 20px;
             width: 80%;
             margin-inline: auto;
@@ -119,16 +107,19 @@ $max-width-3: 1000px;
             align-items: center;
             row-gap: $pad1;
             // margin-top: 2%;
-            max-width: 400px;
+            max-width: 500px;
 
+            // background-color: #D61900;
+            
             .logo{
                 width: 100%;
-                max-width: 400px;
+                max-width: 500px;
             }
     
             p{
                 text-align: center;
                 font-weight: $fw5;
+                font-size: 0.8rem;
                 
             }
         }
@@ -276,6 +267,7 @@ $max-width-3: 1000px;
         align-items: center;
         padding: 2rem 0;
         row-gap: 2rem;
+        
         // background-image:
         // linear-gradient(
         //   to right, 
@@ -519,6 +511,14 @@ $max-width-3: 1000px;
                     a{
                         font-size: 1.2rem;
                     }
+                }
+            }
+        }
+
+        .hero{
+            .container{
+                p{
+                    font-size: 1.5rem;
                 }
             }
         }
