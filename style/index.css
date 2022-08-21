@@ -448,7 +448,7 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .cheong-machinery .header .navbar .container a {
+  .cheong-machinery .navbar .container a {
     font-size: 1.2rem;
   }
   .cheong-machinery .hero .container p {
@@ -473,6 +473,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .cheong-machinery .navbar .container a {
+    font-size: 1.3rem;
   }
   .cheong-machinery .products .product-list {
     -webkit-column-gap: 3rem;

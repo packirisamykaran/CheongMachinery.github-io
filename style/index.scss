@@ -504,7 +504,7 @@ $max-width-3: 1000px;
 
     .cheong-machinery{
 
-        .header{
+        
             .navbar{
                 .container{
 
@@ -513,7 +513,7 @@ $max-width-3: 1000px;
                     }
                 }
             }
-        }
+       
 
         .hero{
             .container{
@@ -543,6 +543,16 @@ $max-width-3: 1000px;
                 }
             }
         }
+       
+            .navbar{
+                .container{
+
+                    a{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+       
 
 
         .products{
