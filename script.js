@@ -71,7 +71,22 @@ const displayProducts = ()=>{
 }
 
 
-const addProducts =(currentCat)=>{
+function checkFileExist(urlToFile) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+     
+    if (xhr.status == "404") {
+        return false;
+    } else {
+        return true;
+    }
+}
+ 
+
+
+
+const addProducts = (currentCat)=>{
 
     let productsElement = document.getElementById("product-list");
 
@@ -84,7 +99,34 @@ const addProducts =(currentCat)=>{
         machineDisplay.onclick = ()=> displayItemDetails(item, currentCat)
 
         let machineImg = document.createElement("img");
+        machineImg.id = item;
+
         machineImg.src = "./products/"+currentCat+"/"+item+".png";
+
+        let pngExists = checkFileExist(machineImg.src);
+
+        if(pngExists){
+            machineImg.src = "./products/"+currentCat+"/"+item+".png";
+        }else{
+            machineImg.src = "./products/"+currentCat+"/"+item+".jpg";
+        }
+        
+        // try {
+        //     machineImg.src = "./products/"+currentCat+"/"+item+".png";
+        // } catch (error) {
+        //     // machineImg.src = "./products/"+currentCat+"/"+item+".jgp";
+        //     console.log(error)
+        // }
+
+        // // let machineImg = new Image();
+        // machineImg.onload=function() { // when .png ok
+        //     machineImg.src = "./products/"+currentCat+"/"+item + '.png';
+        //   };
+        //   machineImg.onerror=function() { // when .png failed
+        //     machineImg.src = "./products/"+currentCat+"/"+item + '.jpg';      
+        //   };
+        //   machineImg.src="./products/"+currentCat+"/"+item + '.png'; // execute the test
+
 
         let nameElement = document.createElement("div");
         nameElement.className = "name";
@@ -129,7 +171,12 @@ const displayItemDetails = (item, currentCat)=>{
 
 
     let displayImgElement = document.getElementById("display-img");
+   try {
     displayImgElement.src = "./products/"+currentCat+"/"+item+".png"
+   } catch (error) {
+    // displayImgElement.src = "./products/"+currentCat+"/"+item+".jpg"
+    console.log("error")
+   }
 
     let curCategory = products[currentCat];
     let equipment = curCategory[item];
