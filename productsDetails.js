@@ -140,7 +140,9 @@ const productDetails = {
 
 
     "welding machine":{
-        
+        "Miller Welding":{
+
+        }
     },
 
 
@@ -229,11 +231,13 @@ const productDetails = {
     },
 
     "roller":{
+        "One Ton Roller":{
 
+        }
     },
 
 
-    "lighting tower":{
+    "light tower":{
         "Lighting Tower":{
             "Voltage":"230V",
             "No. of lamps":"2",
@@ -268,7 +272,9 @@ const productDetails = {
     },
 
     "sunny hose":{
+        "Sunny Hose":{
 
+        }
     },
 
 

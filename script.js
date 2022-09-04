@@ -103,9 +103,9 @@ const addProducts = (currentCat)=>{
 
         machineImg.src = "./products/"+currentCat+"/"+item+".png";
 
-        let pngExists = checkFileExist(machineImg.src);
+        // let pngExists = checkFileExist(machineImg.src);
 
-        if(pngExists){
+        if(true){
             machineImg.src = "./products/"+currentCat+"/"+item+".png";
         }else{
             machineImg.src = "./products/"+currentCat+"/"+item+".jpg";

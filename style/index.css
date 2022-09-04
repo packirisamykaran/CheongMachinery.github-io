@@ -250,6 +250,7 @@
   margin-inline: auto;
   outline: none;
   text-align: center;
+  width: 250px;
 }
 
 .cheong-machinery .products option {
@@ -262,14 +263,11 @@
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-  width: 100%;
+  width: 100vw;
 }
 
 .cheong-machinery .products .product-list .item {
   border-radius: 10px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 1rem;
 }
 
@@ -458,9 +456,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 

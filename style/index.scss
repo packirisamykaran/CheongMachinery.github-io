@@ -286,6 +286,7 @@ $max-width-3: 1000px;
             margin-inline:auto ;
             outline: none;
             text-align: center;
+            width:250px
         }
 
         option{
@@ -297,7 +298,8 @@ $max-width-3: 1000px;
 
             display: flex;
             overflow-x: auto; 
-            width: 100%;
+            width: 100vw;
+            
             
   
 
@@ -305,7 +307,7 @@ $max-width-3: 1000px;
             .item{
 
                 border-radius: 10px;
-                width: fit-content;
+                // width: fit-content;
                 padding: 1rem;
                 // background-color: $darkerred;
                 
@@ -527,7 +529,7 @@ $max-width-3: 1000px;
 
         .product-list{
             display: flex;
-            justify-content: center;
+            justify-content: start;
         }
 
     }
