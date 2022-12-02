@@ -376,7 +376,7 @@ const productDetails = {
     },
 
     "tamping rammer":{
-        "HCD80 – EH12":{
+        "HCD80 EH12":{
         "Engine":	"Robin EH12",
         "Type of Combustion" :	"Air-cooled, Single Cylinder, 4-Stroke",
         "Ramming Force":	"1400kg",
