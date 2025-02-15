@@ -20,10 +20,12 @@ validationElement.addEventListener("keyup", () => {
   submitBtn.disabled = validationElement.value === "8" ? false : true;
 });
 
-// Close item detail
+// Close item detail and update URL
 itemDisplayCloseBtn.addEventListener("click", () => {
   displayDetailElement.style.visibility = "hidden";
   displayDetailElement.style.zIndex = "-1";
+  // Remove the hash from the URL
+  window.history.pushState("", document.title, window.location.pathname + window.location.search);
 });
 
 // Populate the category dropdown
@@ -87,7 +89,7 @@ function addProductsByCategory(category) {
   }
 }
 
-// Display detailed info of a clicked product
+// Display detailed info of a clicked product and update URL hash for SEO
 function displayItemDetails(itemName, category) {
   clearChildren(infoContainer);
 
@@ -117,9 +119,26 @@ function displayItemDetails(itemName, category) {
 
   displayDetailElement.style.visibility = "visible";
   displayDetailElement.style.zIndex = "1";
+
+  // Update URL hash to include the product id for direct linking/SEO
+  window.history.pushState(null, "", `#${itemName}`);
 }
 
 // Initialize dropdown and display
 populateCategories();
 productSelect.addEventListener("change", displayProducts);
 displayProducts();
+
+// Optional: On page load, check for a hash in the URL and display that product's details
+window.addEventListener("load", () => {
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    // Iterate through categories to find the matching item
+    for (const category in products) {
+      if (products[category][hash]) {
+        displayItemDetails(hash, category);
+        break;
+      }
+    }
+  }
+});
